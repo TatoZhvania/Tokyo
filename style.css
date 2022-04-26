@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/tokyomain.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 160px;
+  height: 160px;
+  filter: brightness(3);
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.logo:hover {
+  transform: translateY(10px);
+  transition: 0.6s;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+  visibility: hidden;
+  filter: drop-shadow(10px 5px 4px rgb(160, 0, 210));
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: rgb(132, 26, 231);
+  transition: all 0.5s;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h1 {
+  color: rgb(132, 26, 231);
+  font-size: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  color: #000;
+  font-size: 13px;
+  background: #fff;
+  border: 0;
+  border-radius: 15px;
+
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: rgb(132, 26, 231);
+  color: #fff;
+  transition: all 0.7s;
+}
+
+.cars {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.car1 {
+  background-image: url(images/car\ 1.jpg);
+}
+.car2 {
+  background-image: url(images/car\ 2.jpg);
+}
+.car3 {
+  background-image: url(images/car\ 3.jpg);
+}
+.car4 {
+  background-image: url(images/car\ 4.jpg);
+}
+
+.cars:hover {
+  transform: translateY(-10px);
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.cars p {
+  text-shadow: 0 0 15px #000;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(images/tokyomain.png);
+    background-position: center;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 60px;
+    right: 50px;
+  }
+
+  .menu {
+    margin-bottom: 130px;
+    visibility: visible;
+    position: relative;
+    left: 10px;
+  }
+
+  nav ul {
+    width: 100%;
+    background: rgb(111, 10, 153);
+    background: radial-gradient(
+      circle,
+      rgba(111, 10, 153, 1) 6%,
+      rgba(150, 14, 149, 1) 54%
+    );
+    z-index: 1222;
+    position: absolute;
+    top: 55px;
+    right: 16px;
+
+    width: 20%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+
+  nav ul li a {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    position: relative;
+    visibility: hidden;
+  }
+
+  .row {
+    flex-direction: column;
+
+    margin-left: 60px;
+  }
+
+  .cars {
+    height: 100px;
+    width: 70%;
+    margin-left: 50px;
+  }
+
+  button {
+    position: relative;
+    left: 30%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}

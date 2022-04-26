@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Roboto+Mono:wght@200&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <section class="container">
+        <div class="navbar">
+            <img class="logo"  src="logo.png" alt="logo">
+            <nav>
+                <ul id="menu_list" >
+                    <li class="li" > <a href="https://www.gotokyo.org/en/index.html" target="_blank" >Home</a> </li>
+                    <li class="li"> <a href="https://www.google.com/maps/place/%E1%83%A2%E1%83%9D%E1%83%99%E1%83%98%E1%83%9D,+%E1%83%98%E1%83%90%E1%83%9E%E1%83%9D%E1%83%9C%E1%83%98%E1%83%90/@35.6684415,139.600781,11z/data=!3m1!4b1!4m9!1m2!2m1!1stokyo+region!3m5!1s0x60188b857628235d:0xcdd8aef709a2b520!8m2!3d35.6803997!4d139.7690174!15sCgx0b2t5byByZWdpb26SAQ9jb2xsb3F1aWFsX2NpdHk" target="_blank" >Region</a> </li>
+                    <li class="li"> <a href="https://www.planetware.com/tourist-attractions-/tokyo-jpn-kn-t.htm" target="_blank" >Places</a> </li>
+                    <li class="li"> <a href="https://en.wikipedia.org/wiki/Tokyo" target="_blank" >About</a> </li>  
+                </ul>
+            </nav>
+            <img class="menu" src="Menu.png" alt="menu" onclick="togglemenu()" >
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1><em>Tokyo</em></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button type="button" >Explore  </button>
+            </div>
+            <div class="col">
+                <div class="cars car1">
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem Ipsum is simply dummy text of the </p>
+                </div>
+                <div class="cars car2">
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem Ipsum is simply dummy text of the </p>
+                </div>
+                <div class="cars car3">
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem Ipsum is simply dummy text of the </p>
+                </div>
+                <div class="cars car4">
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem Ipsum is simply dummy text of the </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        var menuList = document.getElementById("menu_list");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "150px"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+
+</body>
+</html>
